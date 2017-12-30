@@ -1,11 +1,49 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Index</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #f1f1f1;
+        }
+
+        li {
+            float: left;
+        }
+        
+        li a {
+            display: block;
+            color: #000;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a.active {
+            background-color: #1F6FFF;
+            color: white;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #555;
+            color: white;
+        }
+        
+    </style>
     </head>
     <body>
-        <div>TODO write content</div>
+        <div></div>
+
+        <ul>
+            <li><a href = "current.html">Home</a></li>
+            <li><a href="origin.html">About</a></li>
+            <li><a class = "active" href="index.html">Index</a></li>
+        </ul>
     </body>
 </html>
