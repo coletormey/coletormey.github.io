@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <title>KM - Store</title>
+        <link href='//fonts.googleapis.com/css?family=Montserrat Subrayada' rel='stylesheet'>
+        <link href='//fonts.googleapis.com/css?family=Khula' rel='stylesheet'>
+        <link href='//fonts.googleapis.com/css?family=Lemon' rel='stylesheet'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            
+             ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #333;
+            }
+            .active{
+                background-color: #4A53CF;
+            }           
+            li {
+                float: left;
+            }
+
+            li a, .dropbtn {
+                display: inline-block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            li a:hover, .dropdown:hover .dropbtn {
+                background-color: #AEDFEC;
+            }
+
+            li.dropdown {
+                display: inline-block;
+            }
+
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+            }
+
+            .dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+            }
+
+            .dropdown-content a:hover {background-color: #f1f1f1}
+
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }            
+            
+            body {
+                background: #1c1c1c !important; 
+                overflow-y: scroll;
+                overflow-x: hidden;
+            }
+            
+            .button1 {
+                background-color: #008CBA;
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 164px 2px;
+                margin-top: 24px;
+               
+                cursor: pointer;
+            } 
+            .button2 {
+                background-color: #008CBA;
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 164px 2px;
+                margin-top: 24px;
+                cursor: pointer;
+            } 
+            .button3 {
+                background-color: #008CBA; 
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 164px 2px;
+                margin-top: 24px;
+                cursor: pointer;
+            } 
+            
+            .Size {
+                z-index: -1;
+               margin-top: 166px;
+            }
+            .Quantity {
+                z-index: -1;
+                margin-top: 12px;
+            }
+        </style>  
+    </head>
+ 
+    <body bgcolor="#1c1c1c">
+        <div style='background-color: #EFF73F;'>
+        <p class="what" style="font-family: 'Lemon';font-size: 64px;color: #000000;
+            padding-left: 48px; padding-top: 24px;">
+            Kitten Mittens
+        </p>
+        
+        <ul>
+            <li><a href="http://csc412sfsu.com/~mtormey/kittenmittens.html">Home</a></li>
+            <li><a href="http://csc412sfsu.com/~mtormey/kmstore.html" class="active">Shop</a></li>
+            <li><a href="http://csc412sfsu.com/~mtormey/testimonials.html">Testimonials</a></li>
+            <li><a href="http://csc412sfsu.com/~mtormey/origin.html">Origin</a></li>
+            
+        </ul>
+      </div>
+        <div class="firstrow" style="color: white;">
+            <div class="col-sm-3" style="background-color:#1c1c1c;">
+                <img class="first" src="http://csc412sfsu.com/~mtormey/1stmitten.jpg"
+                alt="first" style="width: 80%; height: 80%; padding-top: 100px">
+            </div>
+            <div class="col-sm-6" style="background-color:#1c1c1c;">
+                <p class='firstDesc' style="font-family: 'Lemon';font-size: 46px;color: #E9E9E9;
+                    padding-top: 100px;">
+                    Fun&#8482; Kitten Mittens
+                </p>
+                
+                <p class='firstDesc' style="font-family: 'Khula';font-size: 22px;color: #d1d1d1;
+                    padding-top: 24px;">
+                    Look at how zany and wacky this pair is!!<br>
+                    Dazzle friends and family with this OUTLANDISH<br>
+                    design.
+                </p>
+            </div>
+            
+            <div class="col-sm-2" style="background-color:#1c1c1c;">
+                <form action='http://csc412sfsu.com/~mtormey/checkout.html'>
+                <select required class="Size" style="color: black;">
+                    <option selected disabled value=''>Select a Size</option>
+                    <option value="small paws">Small Paws</option>
+                    <option value="medium paws">Medium Paws</option>
+                    <option value="large paws">Large Paws</option>
+                </select>
+                
+                
+                <select required class="Quantity" style="color: black;">
+                    <option selected disabled value=''>Quantity</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                </select>
+                <button type="submit" class="button1">Purchase</button>
+                </form>
+            </div>
+            
+            
+               
+        </div>
+        
+        <div class="secondrow" style="color: white;">
+            <div class="col-sm-3" style="background-color:#1c1c1c;">
+                <img class="second" src="http://csc412sfsu.com/~mtormey/2ndmitten.jpg"
+                alt="first" style="width: 80%; height: 80%; padding-top: 100px">
+            </div>
+            <div class="col-sm-6" style="background-color:#1c1c1c;">
+                <p class='secondDesc' style="font-family: 'Lemon';font-size: 46px;color: #E9E9E9;
+                    padding-top: 100px;">
+                    Fun 2.0&#8482; Kitten Mittens
+                </p>
+                
+                <p class='secondDesc' style="font-family: 'Khula';font-size: 22px;color: #d1d1d1;
+                    padding-top: 24px;">
+                    Remember the Fun&#8482; Kitten Mittens?<br>
+                    Of course you do! Well looky here.<br>
+                    We improved the design, giving it a<br>
+                    higher fun content than ever before!
+                </p>
+            </div>
+            <div class="col-sm-2" style="background-color:#1c1c1c;">
+                <form action='http://csc412sfsu.com/~mtormey/checkout.html'>
+                <select required class="Size" style="color: black;">
+                    <option selected disabled value=''>Select a Size</option>
+                    <option value="small paws">Small Paws</option>
+                    <option value="medium paws">Medium Paws</option>
+                    <option value="large paws">Large Paws</option>
+                </select>
+                
+                
+                <select required class="Quantity" style="color: black;">
+                    <option selected disabled value=''>Quantity</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                </select>
+                <button type="submit" class="button2">Purchase</button>
+                </form>
+            </div>
+            
+               
+        </div>
+        
+        <div class="thirdrow" style="color: white;">
+            <div class="col-sm-3" style="background-color:#1c1c1c;">
+                <img class="third" src="http://csc412sfsu.com/~mtormey/macmitten.jpg"
+                alt="first" style="width: 80%; height: 80%; padding-top: 100px">
+            </div>
+            <div class="col-sm-6" style="background-color:#1c1c1c;">
+                <p class='thirdDesc' style="font-family: 'Lemon';font-size: 46px;color: #E9E9E9;
+                    padding-top: 100px;">
+                    Kitten Mittens by Mac
+                </p>
+                
+                <p class='thirdDesc' style="font-family: 'Khula';font-size: 22px;color: #d1d1d1;
+                    padding-top: 24px;">
+                    To be honest, these kinda suck.<br>
+                    Mac wanted to design a pair, but<br>
+                    he hardly has any artistic ability.<br>
+                    He wouldn't stop talking about it unless<br>
+                    we agreed, so, here it is.
+                </p>
+            </div>
+            <div class="col-sm-2" style="background-color:#1c1c1c;">
+               <form action='http://csc412sfsu.com/~mtormey/checkout.html'>
+                <select required class="Size" style="color: black;">
+                    <option selected disabled value=''>Select a Size</option>
+                    <option value="small paws">Small Paws</option>
+                    <option value="medium paws">Medium Paws</option>
+                    <option value="large paws">Large Paws</option>
+                </select>
+                
+                
+                <select required class="Quantity" style="color: black;">
+                    <option selected disabled value=''>Quantity</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                </select>
+                <button type="submit" class="button3">Purchase</button>
+                </form>
+                               
+            </div>
+            
+               
+        </div>
+        
+    </body>
+</html>

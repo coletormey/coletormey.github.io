@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #f1f1f1;
+        }
+
+        li {
+            float: left;
+        }
+        
+        li a {
+            display: block;
+            color: #000;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a.active {
+            background-color: #1F6FFF;
+            color: white;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #555;
+            color: white;
+        }
+        
+    </style>    
+    </head>
+    
+    <body>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <div id="banner">
+            <h1> Hey ;) </h1>
+            <script>
+            function changeColor() {
+                document.getElementById("nav").style.backgroundColor = '#'+(Math.random()*0xFFFFFF<<0).toString(16);
+            }
+            $(document).ready(function(){
+                $("frank2").click(function(){
+                    $("frank2").animate({right: "-=30px"}, 9000);
+                });
+            });
+            </script>
+            
+        </div>
+        <div id="container">
+            <div id="container2">
+                <p>Cole. SFSU '19.</p>
+                <div id="navigation">
+                    <ul  id = "nav">
+                        <li><a class = "active" href = "current.html">Home</a></li>
+                        <li><a href="origin.html">About</a></li>
+                        <li><a href="index.html">Index</a></li>
+                    </ul>
+                    <button type="button" onclick="changeColor()">Set nav bar color.</button>
+                </div>
+                <div id="more">
+                    
+                </div> 
+                <div id="content">
+                    <p>
+                        In this section, I will eventually provide links to work I have done in order
+                        to showcase it in a aesthetically pleasing and orderly fashion, <br /> so as to woo 
+                        potential employers and also my mom. However, until I do that, here is a picture
+                        of Frank to satiate your palate:
+                        
+                    </p>
+                    <h1 id="frank">Look at him go: </h1>
+                    <img id="frank2" src="http://www3.pictures.zimbio.com/mp/ppW_-8TxxWSl.jpg" alt="Franky-hanky.jpanky" style="top:300px;width:396px;height:594px;position:absolute;">
+                </div>
+		<div id="cleardiv"></div>
+            </div>
+        </div>
+        <div id="footer"></div>
+        <div></div>
+        
+        
+
+        
+        
+    </body>
+    
+</html>

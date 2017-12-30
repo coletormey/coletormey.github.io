@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>KM - Checkout</title>
+        <link href='//fonts.googleapis.com/css?family=Lemon' rel='stylesheet'>
+        <link href='//fonts.googleapis.com/css?family=Montserrat Subrayada' rel='stylesheet'>
+        <link href='//fonts.googleapis.com/css?family=Khula' rel='stylesheet'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #333;
+            }
+            .active{
+                background-color: #4A53CF;
+            }
+            li {
+                float: left;
+            }
+
+            li a, .dropbtn {
+                display: inline-block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            li a:hover, .dropdown:hover .dropbtn {
+                background-color: #AEDFEC;
+            }
+
+            li.dropdown {
+                display: inline-block;
+            }
+
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+            }
+
+            .dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+            }
+
+            .dropdown-content a:hover {background-color: #f1f1f1}
+
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }            
+            
+            body {
+                background: #1c1c1c !important; 
+                overflow-y: scroll;
+                overflow-x: hidden;
+            }
+        </style>
+    </head>
+    <body>
+        <div style='background-color: #EFF73F;'>
+        <p class="what" style="font-family: 'Lemon';font-size: 64px;color: #000000;
+            padding-left: 48px; padding-top: 24px;">
+            Kitten Mittens
+        </p>
+        
+        <ul>
+            <li><a href="http://csc412sfsu.com/~mtormey/kittenmittens.html">Home</a></li>
+            <li><a href="http://csc412sfsu.com/~mtormey/kmstore.html" class="active">Shop</a></li>
+            <li><a href="http://csc412sfsu.com/~mtormey/testimonials.html">Testimonials</a></li>
+            <li><a href="http://csc412sfsu.com/~mtormey/origin.html">Origin</a></li>
+            
+        </ul>
+      </div>
+        
+        <div class="firstrow" style="color: white;">
+            <div class="col-sm-6" style="background-color:#1c1c1c;">
+                <p class='Info' style="font-family: 'Khula';font-size: 46px;color: #d1d1d1;
+                    padding-top: 48px;">
+                    Please enter your personal info
+                </p>
+                
+                <form action="http://csc412sfsu.com/~mtormey/purchaseconfirmation.html">
+                  First name:<br>
+                  <input required type="text" name="firstname" style="color: black;">
+                  <br>
+                  Last name:<br>
+                  <input required type="text" name="lastname" style="color: black;">
+                  <br>
+                  Email:<br>
+                  <input required type="text" name="email" style="color: black;">
+                  <br><br>
+                  <input type="submit" value="Submit" style="color: black;">
+                </form>                 
+            </div>
+        </div>    
+    </body>
+</html>
